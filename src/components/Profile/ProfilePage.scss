@@ -1,0 +1,140 @@
+@import '../../colors';
+
+.profile {
+  &-container {
+    @media screen and (max-width: 900px){
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+
+    }
+    @media screen and (max-width: 700px){
+      padding: 28px 10px;
+    }
+    flex: 1 1 auto;
+    display: flex;
+    padding: 28px 56px;
+  }
+
+  &-information {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &-image {
+    height: 280px;
+    width: 280px;
+    border-radius: 50%;
+  }
+
+  &-following {
+    height: 25px;
+    width: 25px;
+    margin-right: 8px;
+    margin-left: 16px;
+    background: url("../../assests/provate.png") no-repeat scroll;
+  }
+
+  &-followers {
+    height: 25px;
+    width: 25px;
+    margin-right: 8px;
+    background: url("../../assests/shared.png") no-repeat scroll;
+  }
+
+  &-login {
+    text-decoration: none;
+    height: 29px;
+    font-size: 18px;
+    line-height: 22px;
+    color: $blue;
+  }
+
+  &-pagination {
+    & li{
+      margin-left: 16px;
+      &:hover{
+        cursor: pointer;
+      }
+    }
+    align-self: flex-end;
+    display: flex;
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    line-height: 25px;
+    text-align: center;
+  }
+
+  &-active {
+    background: $blue;
+    color: $white;
+    height: 25px;
+    width: 21px;
+    border-radius: 3px;
+  }
+
+  &-prev {
+
+    border: solid $grey;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+    transform: rotate(135deg);
+    -webkit-transform: rotate(135deg);
+  }
+&-network{
+  width: 300px;
+}
+  &-next {
+    & .disabled{
+      border: solid blue;
+    }
+    border: solid $grey;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+  }
+
+  &-name {
+    margin-top: 29px;
+    margin-bottom: 12px;
+    font-weight: 600;
+    font-size: 26px;
+    line-height: 34px;
+  }
+
+  &-network {
+    margin-top: 25px;
+    line-height: 25px;
+    display: flex;
+  }
+}
+
+.repos-count {
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 42px;
+  margin: 28px 0;
+}
+
+.repos-container {
+  @media screen and (max-width: 900px) {
+    margin-left: 0;
+  }
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-left: 96px;
+}
+.repos-pagination-container{
+  color: $grey;
+
+  display: flex;
+  justify-content: flex-end;
+  font-size: 14px;
+  line-height: 21px;
+}

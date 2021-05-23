@@ -1,0 +1,42 @@
+@import '../../colors';
+
+.header {
+  &-container {
+    @media screen and (max-width: 700px) {
+      padding: 16px 20px;
+    }
+    background: $blue;
+    flex: 0 1 auto;
+    padding: 16px 41px;
+    display: flex;
+    height: 72px;
+  }
+
+  &-logo {
+    @media screen and (max-width: 700px) {
+
+    }
+  }
+
+  &-form {
+    @media screen and (max-width: 700px) {
+      width: 100%;
+    }
+  }
+
+  &-search {
+    background: $white url("../../assests/search_icon.png") no-repeat scroll 14px 14px;
+    padding-left: 44px;
+    margin-left: 22px;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    height: 40px;
+    width: 500px;
+    @media screen and (max-width: 700px) {
+      width: 100%;
+      margin-left: 5px;
+    }
+  }
+
+}

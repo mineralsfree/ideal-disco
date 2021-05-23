@@ -1,0 +1,16 @@
+@import "../../colors";
+
+.state{
+  &-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    align-items: center;
+  }
+  &-text{
+    font-size: 22px;
+    line-height: 31px;
+    color: $grey
+  }
+}
